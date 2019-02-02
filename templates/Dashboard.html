@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="cache-control" content="no-cache" />
+<title>Dashboard</title>
+<link rel="stylesheet" href="static/css/Elements.css">
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  crossorigin="anonymous">
+</script>
+<script src="static/js/main.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header"></div>
+  <div class="content">
+    <p>Enter your name and phone number to analyze the sentiment of the conversation</p>
+    <form id="form1" name="form1" action="/Analysis" role="form">
+      <p>Name:
+        <label for="name"></label>
+        <input type="text" name="name" id="name" />
+      </p>
+      <p>Phone:  
+        <label for="phone"></label>
+        <input type="text" name="phone" id="phone" />
+      </p>
+      <p>
+        <div class = "button">
+            <input class = "Button" type="submit" name="analyze" id="analyze" value="Analyze!" />
+        </div>
+      </p>
+    </form>
+    <p>&nbsp;</p>
+    </div>
+  </div>
+</body>
+</html>
